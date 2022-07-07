@@ -1,14 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const name = 'User';
-const id = 10;
+const fname = 'Varun';
+const lname = 'Singh';
 ReactDOM.render(
     <div>
-        <h1>Hello {name}!</h1>
-        <p>Your id is {id}</p>
-        <p>Addition of a two numbers: {2+3}</p>
-        <p>Generating random number: {Math.floor(Math.random() * 10)}</p>
+        {/* JavaScript expressions in JSX and ES6 template literals */}
+        <h1>Hello {`${fname} ${lname}`}!</h1>
+
+        <h1>Hello {fname} {lname}!</h1>
+
+        <h1>Hello {fname +" "+ lname}</h1>
     </div>,
     document.getElementById("root")
 );
