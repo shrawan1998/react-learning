@@ -1,18 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+const name = 'User';
+const id = 10;
 ReactDOM.render(
     <div>
-        <h1>
-            Great Forts of Rajasthan
-        </h1>
-        <ul>
-            <li>Chittorgarh Fort - Chittorgarh</li>
-            <li>Kumbhalgarh Fort - Udaipur</li>
-            <li>Golden Fort - Jaisalmer</li>
-            <li>Amer Fort - Jaipur</li>
-            <li>Meharangarh Fort - Jodhpur</li>
-        </ul>
+        <h1>Hello {name}!</h1>
+        <p>Your id is {id}</p>
+        <p>Addition of a two numbers: {2+3}</p>
+        <p>Generating random number: {Math.floor(Math.random() * 10)}</p>
     </div>,
     document.getElementById("root")
 );
