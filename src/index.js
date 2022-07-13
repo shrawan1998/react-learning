@@ -1,16 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const fname = 'Varun';
-const lname = 'Singh';
+const name = "Shrawan";
+const year = new Date().getFullYear();
 ReactDOM.render(
     <div>
-        {/* JavaScript expressions in JSX and ES6 template literals */}
-        <h1>Hello {`${fname} ${lname}`}!</h1>
-
-        <h1>Hello {fname} {lname}!</h1>
-
-        <h1>Hello {fname +" "+ lname}</h1>
+        <p>Created by {name} </p>
+        <p>Copyright {year} </p>
     </div>,
     document.getElementById("root")
 );
