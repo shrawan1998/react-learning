@@ -1,3 +1,10 @@
 .heading{
     color: red;
 }
+
+.fort-imgs{
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    height: 100px;
+}
