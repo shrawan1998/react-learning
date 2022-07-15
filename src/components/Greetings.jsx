@@ -6,7 +6,7 @@ function Greetings(){
     const customStyle = {
         color: "",
         borderBottom: "",
-    }
+    };
 
     let greetings;
 
