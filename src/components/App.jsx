@@ -3,7 +3,7 @@ import Greetings from "./Greetings";
 import Heading from "./Heading";
 import List from "./List";
 // import PI, {doublePI, triplePI} from "./Math";
-import {add, multiply, subtract, divide} from "./calculater";
+import * as Calculator from "./calculater";
 
 function App() {
     return(
@@ -14,10 +14,10 @@ function App() {
 
             {/* Export and Import in React */}
             <ul>
-                <li>{add(5,6)} </li>
-                <li>{multiply(5,6)} </li>
-                <li>{subtract(5,6)} </li>
-                <li>{divide(5,6)} </li>
+                <li>{Calculator.add(5,6)} </li>
+                <li>{Calculator.multiply(5,6)} </li>
+                <li>{Calculator.subtract(5,6)} </li>
+                <li>{Calculator.divide(5,6)} </li>
             </ul>
         </div>
     );
