@@ -14,11 +14,11 @@ function Greetings(){
         greetings = "Good Morning!!";
         customStyle.color = "Green";
         customStyle.borderBottom = "3px solid green";
-    } else if(currentTime > 12 && currentTime < 15) {
+    } else if(currentTime >= 12 && currentTime <= 15) {
         greetings = "Good Afternoon!!";
         customStyle.color = "yellow";
         customStyle.borderBottom = "3px solid yellow";
-    } else if(currentTime > 15 && currentTime < 21) {
+    } else if(currentTime > 15 && currentTime <= 21) {
         greetings = "Good Evening!!";
         customStyle.color = "blue";
         customStyle.borderBottom = "3px solid blue";

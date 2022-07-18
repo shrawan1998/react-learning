@@ -2,7 +2,8 @@ import React from "react";
 import Greetings from "./Greetings";
 import Heading from "./Heading";
 import List from "./List";
-import PI, {doublePI, triplePI} from "./Math";
+// import PI, {doublePI, triplePI} from "./Math";
+import {add, multiply, subtract, divide} from "./calculater";
 
 function App() {
     return(
@@ -13,9 +14,10 @@ function App() {
 
             {/* Export and Import in React */}
             <ul>
-                <li>The value of PI: {PI} </li>
-                <li>Double of PI: {doublePI()} </li>
-                <li>Triple of PI: {triplePI()} </li>
+                <li>{add(5,6)} </li>
+                <li>{multiply(5,6)} </li>
+                <li>{subtract(5,6)} </li>
+                <li>{divide(5,6)} </li>
             </ul>
         </div>
     );
